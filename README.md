@@ -38,6 +38,11 @@
 ```
 $ gem install sass
 ```
+crear mediante comando un archivo scss
+
+```
+$ echo "// SCSS Style" >> style.scss
+```
 
 Para utilizar Sass en la línea de comandos, simplemente ejecuta el comando sass:
 ```
