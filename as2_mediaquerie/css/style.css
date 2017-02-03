@@ -1,11 +1,11 @@
-#main {
-  width: 100%;
+#content {
+  width: 60%;
   margin-left: 10px; }
-  #main p, #main div {
+  #content p, #content div {
     font-size: 2em; }
-    #main p a, #main div a {
+    #content p a, #content div a {
       font-weight: bold; }
-  #main pre {
+  #content pre {
     font-size: 3em; }
 
 html,
@@ -27,6 +27,20 @@ body {
   background-size: cover;
   min-width: 400px;
   max-width: 1080px; }
+
+.container {
+  padding: 20px 10px; }
+
+#header {
+  width: 960px; }
+
+#sidebar p {
+  width: 35%;
+  padding: 10px 0 0;
+  float: right;
+  font-family: 'Sansita', sans-serif;
+  font-size: 2em;
+  z-index: 5; }
 
 #gallery div {
   float: left;
@@ -100,36 +114,53 @@ body {
 
 .container {
   padding: 20px 10px;
-  width: 980px; }
-
-article[role="main"] {
-  float: left;
-  width: 41.66667%; }
-
-aside[role="complementary"] {
-  float: right;
-  width: 10.41667%; }
-
-.sidebar {
-  width: 350px;
-  padding: 10px 0 0;
-  float: right;
-  font-family: 'Sansita', sans-serif; }
+  width: 960px; }
 
 /* footer */
 #footer {
   position: fixed;
-  bottom: 0px;
-  left: 0px;
-  width: 100%; }
+  width: 98%;
+  padding-top: 550px; }
 
 #footer p {
   font-family: "karla", sans-serif;
   font-size: 0.7em;
   color: #DDE0E3;
   font-weight: bold;
-  text-align: right;
-  padding: 10px;
-  margin: 0px; }
+  text-align: right; }
+
+@media screen and (max-width: 480px) {
+  .logo {
+    margin-top: 30px; }
+
+  .navigation {
+    margin: 0 0 15px 0; }
+
+  .navigation li {
+    width: auto;
+    margin-bottom: 10px;
+    margin-right: 3%; }
+
+  .navigation li a {
+    border-right: none;
+    padding: 0;
+    display: block; }
+
+  .navigation li a em {
+    display: none; } }
+@media screen and (min-width: 320px) {
+  #content {
+    float: left;
+    width: 60%; }
+
+  #sidebar {
+    float: right;
+    width: 35%; } }
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  #content {
+    width: 95%; }
+
+  #sidebar {
+    width: 95%; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -7,13 +7,13 @@
 
 $fontFamily: 'karla', sans-serif;
 $fontColor: #DDE0E3;
-$widthAll: 100%;
+$widthAll: 960px;
 $maginLeft: 10px;
 
 //Nesting - nest some rules inside another to create contextual selectors
 
-#main {
-  width: $widthAll;
+#content {
+  width: 60%;
   margin-left: $maginLeft;
 
   p, div {
@@ -44,6 +44,29 @@ body {
     min-width: 400px;
     max-width: 1080px;
   }
+
+.container {
+  padding: 20px 10px;
+}
+
+#header {
+  width: $widthAll;
+}
+
+
+#sidebar p {
+  width: 35%;
+  padding: 10px 0 0;
+  float: right;
+
+  font-family: 'Sansita', sans-serif;
+  font-size: 2em;
+  //
+  //border-style: solid;
+  //border-color: #ff0000 #0000ff;
+
+  z-index: 5;
+}
 
 @import 'gallery';
 
@@ -92,36 +115,18 @@ body {
 
 .container {
   padding: 20px 10px;
-  width: 980px;
+  width: $widthAll;
 }
 
-
-article[role="main"] {
-  float: left;
-  width: 400px / 960px * 100%;
-}
-
-aside[role="complementary"] {
-  float: right;
-  width: 100px / 960px * 100%;
-}
-
-//Sidebar
-
-.sidebar {
-  width: 350px;
-  padding: 10px 0 0;
-  float: right;
-
-  font-family: 'Sansita', sans-serif;
-}
 
 /* footer */
 #footer {
   position: fixed;
-  bottom: 0px;
-  left: 0px;
-  width: $widthAll ;
+  width: 98%;
+  padding-top: 550px;
+
+  //border-style: solid;
+  //border-color: #ff0000 #0000ff;
 }
 
 #footer p {
@@ -130,6 +135,46 @@ aside[role="complementary"] {
   color: $fontColor;
   font-weight: bold;
   text-align: right;
-  padding: 10px;
-  margin: 0px;
 }
+
+
+
+//Assignment No. 2 Media Query
+
+@media screen and (max-width: 480px) {
+  .logo {
+    margin-top: 30px;
+  }
+
+  .navigation {
+    margin: 0 0 15px 0;
+  }
+  .navigation li {
+    width: auto;
+    margin-bottom: 10px;
+    margin-right: 3%;
+  }
+  .navigation li a {
+    border-right: none;
+    padding: 0;
+    display: block;
+  }
+  .navigation li a em {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width : 320px) {
+  #content{float:left;width:60%;}
+  #sidebar{float:right;width:35%}
+}
+
+@media screen and (min-width : 320px) and (max-width : 1024px) {
+  #content{width:95%;}
+  #sidebar{width:95%;}
+}
+
+
+
+
