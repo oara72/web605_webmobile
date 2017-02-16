@@ -10,6 +10,8 @@ var uglify = require('gulp-uglify');
 
 var htmlmin = require('gulp-htmlmin');
 
+var markdownpdf = require('gulp-markdown-pdf');
+
 // Compile Our Sass
 gulp.task('sass', function() {
     return gulp.src('css/*.scss')
@@ -32,5 +34,14 @@ gulp.task('minify', function() {
     .pipe(gulp.dest('dist'));
 });
 
+
+// Markdown to pdf
+
+gulp.task('markdown-pdf', function () {
+    return gulp.src('assignment4.md')
+        .pipe(markdownpdf())
+        .pipe(gulp.dest('dist/pdf'));
+});
+
 // Default Task
-gulp.task('default', ['sass', 'uglify', 'minify']);
+gulp.task('default', ['sass', 'uglify', 'minify', 'markdown-pdf']);
