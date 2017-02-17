@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 3 - Gulp </title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <!--<style type="text/css">-->
+        <!--.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-6, .col-md-8 {-->
+            <!--background-color: #34495e;-->
+            <!--color: white;-->
+            <!--line-height: 5em;-->
+            <!--border: 1px solid white;-->
+            <!--height: 5em;-->
+        <!--}-->
+    <!--</style>-->
+
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="nav">
+            <ul>
+                <li><a href="index.html"> home </a></li>
+            </ul>
+        </div>
+
+        <!-- content -->
+
+        <div class="col-md-8"> <!-- Este hace una columna a la izquierda -->
+
+            <div id="content">
+
+
+
+                <p> Traveling It leaves you speechless, <br> then turns you into a storyteller.</p>
+
+                <div class="box"> To travel is to live ! </div>
+
+                <div id="gallery">
+
+                    <div id="image1"></div>
+                    <div id="image2"></div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- aside -->
+
+        <div class="col-md-4"> <!-- este hace una columna a la derecha -->
+
+            <div id="sidebar" >
+
+                <p>To travel is to take a journey into yourself. <br>Danny Kaye</p>
+
+            </div>
+        </div>
+
+    <!-- The device-pixel-ratio Use Case -->
+        <div>
+          <img srcset="img/machupichu.jpg 1x, img/malasya.jpg 2x, img/iceland.jpg 3x"
+          src="machupichu.jpg"
+          alt="picture" />
+        </div>
+
+        <!-- Using Media Queries -->
+        <div>
+        <img srcset="img/machupichu.jpg  1024w, img/malasya.jpg 640w, img/iceland.jpg  320w"
+        	   sizes="(min-width: 36em) 33.3vw, 100vw"
+        	   src="img/machupichu.jpg"
+        	   alt="picture" />
+        </div>
+
+        <!-- using picture -->
+        <div>
+        <picture>
+            <source srcset="img/machupichu.jpg" media="(min-width: 1024px)">
+            <source srcset="img/malasya.jpg" media="(min-width: 640px)">
+            <source srcset="img/iceland.jpg" media="(min-width: 320px)">
+
+            <img srcset="img/iceland.jpg" alt="…">
+        </picture>
+      </div>
+
+ </div>
+    <div id="footer"> <!-- This is the footer --></div>
+</div>
+
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/footer.js"> </script>
+<script src="js/picturefill.js"></script>
+</body>
+</html>
