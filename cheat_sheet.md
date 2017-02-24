@@ -780,7 +780,7 @@ if work a *dist* file is created
 > media queries
 
 5.	To extend images beyond what can be done with the <img> element, the __________ element was added in HTML5.          
-> *<picture>*
+> picture
 
 6.	The term "Art Direction" is used to describe:          
 > using very different images for different screen sizes
@@ -792,7 +792,7 @@ if work a *dist* file is created
 > picturefill.js
 
 9.	The <source> element must be contained in a __________ element.          
-> *<picture>*
+> picture
 
 10.	To do Art Direction in HTML, you use the __________ attribute.           
 > media
