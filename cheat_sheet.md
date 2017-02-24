@@ -710,7 +710,7 @@ if work a *dist* file is created
 > tell the browser to use its actual dimensions to render the page
 
 3.	We can detect the display width using the CSS @ rule:          
-> ```@media```
+> @media
 
 4.	In JavaScript we can access media rules using the method:         
 > window.matchMedia()
