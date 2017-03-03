@@ -1,0 +1,6 @@
+Canadian postal codes can't contain the letters D, F, I, O, Q, or U, and cannot start with W or Z:
+
+[ABCEGHJKLMNPRSTVXY][0-9][ABCEGHJKLMNPRSTVWXYZ][0-9][ABCEGHJKLMNPRSTVWXYZ][0-9]
+If you want an optional space in the middle:
+
+[ABCEGHJKLMNPRSTVXY][0-9][ABCEGHJKLMNPRSTVWXYZ] ?[0-9][ABCEGHJKLMNPRSTVWXYZ][0-9]
