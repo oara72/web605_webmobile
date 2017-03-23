@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1f9df5df-25bf-42d6-bfdf-25f314b30507" name="scweb.ca" url="http://php.scweb.ca">
+        <fileTransfer host="php.scweb.ca" port="22" rootFolder="/home/w0668948" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
