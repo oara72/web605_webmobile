@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" manifest="offline.manifiest">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,6 @@
 
 </head>
 <body>
-
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -40,47 +39,38 @@
     <h1>Mobile App Cache</h1>
 </div>
 
-<div class="col-md-offset-1 container-fluid bg-grey">
-
+<div class="container">
     <div class="row">
-
-        <div class="col-md-offset-12s" id="content">
-
-            <section>
-
-
-                        <th width="350">
-                            <p>This is my most recently work at St.Clair College.</p>
-                        </th>
-
-                        <td >
-                            <article id="gallery">
-                                <a href="assign/assign2/butlers.html"><div id="image1" title="assign 2"></div></a>
-                                <a href="assign/assign5/assign_5_font_and_text.htm"><div id="image2" title="assign 5"></div></a>
-                                <a href="assign/assign6b/3columns_2.html"><div id="image3" title="assign 6b"></div></a>
-                                <a href="assign/assign7a/menu_horizontal.html"><div id="image4" title="assign 7a"></div></a>
-                                <a href="assign/assign7b/menu_vertical.html"><div id="image5" title="assign 7b"></div></a>
-                                <a href="assign/assign8/summerCamp.htm"><div id="image6" title="assign 8"></div></a>
-                                <a href="assign/assign9/assignmen9-CSSEnhancedPage.html"><div id="image7" title="assign 9"></div></a>
-                            </article>
-                        </td>
-
-
-            </section>
-
+        <div class="five columns">
+            <p><input type="search"/>
+                <input type="button" value="Search" onclick="search()"/></p>
+        </div>
+        <div id="result">
         </div>
     </div>
 
+    <div class="row">
+        <div class=" ">
+        <h1>Offline Web - Ping Test
+        <output> </output></h1> <!-- aqui sale el ping -->
+
+         <section id="content">
+
+             aqui no va nada por ahora
+
+         </section>
+        </div>
+    </div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="script.js"></script>
 
 <!-- ping -->
-<script src="ping/ping_script.js"></script>
+    <script src="ping/ping_script.js"></script>
 
 <!-- Local Storage -->
-<script src="localstorage/ls_script.js"></script>
+    <script src="localstorage/ls_script.js"></script>
 
 </body>
 </html>

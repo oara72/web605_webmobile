@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" manifest="offline.manifest">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -13,6 +13,7 @@
 
 </head>
 <body>
+
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -39,38 +40,34 @@
     <h1>Mobile App Cache</h1>
 </div>
 
-<div class="container">
+<div class="col-md-offset-1 container-fluid bg-grey">
+
     <div class="row">
-        <div class="five columns">
-            <p><input type="search"/>
-                <input type="button" value="Search" onclick="search()"/></p>
-        </div>
-        <div id="result">
+
+        <div class="col-md-offset-12s" id="content">
+            <h2>Our Solutions</h2>
+            <p>Which Vecta Corp. solution are you interested in learning about?</p>
+
+            <a class="button button1" id="vprospect" href="#"> Prospection </a>
+            <a class="button button1" id="vconvert" href="#"> Converting </a>
+            <a class="button button1" id="vretain" href="#"> Retain </a>
+            <a class="button button1" id="vselling" href="#"> Selling </a>
+
+
+            <div id="solution"></div>
         </div>
     </div>
 
-    <div class="row">
-        <div class=" ">
-        <h1>Offline Web - Ping Test
-        <output> </output></h1> <!-- aqui sale el ping -->
-
-         <section id="content">
-
-             aqui no va nada por ahora
-
-         </section>
-        </div>
-    </div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="script.js"></script>
 
 <!-- ping -->
-    <script src="ping/ping_script.js"></script>
+<script src="ping/ping_script.js"></script>
 
 <!-- Local Storage -->
-    <script src="localstorage/ls_script.js"></script>
+<script src="localstorage/ls_script.js"></script>
 
 </body>
 </html>
