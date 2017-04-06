@@ -1,0 +1,26 @@
+CACHE MANIFEST
+#v2
+
+CACHE:
+css/bootstrap.css
+css/bootstrap.min.css
+css/style.css
+script/script.js
+images/logo_vconvert.gif
+
+localstorage/ls_script.js
+
+ping/ping_script.js
+
+index.html
+pageone.html
+pagetwo.html
+pagethree.html
+
+script.js
+
+NETWORK:
+*
+
+FALLBACK:
+/ offline.html

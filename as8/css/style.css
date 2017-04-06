@@ -1,0 +1,75 @@
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button1:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*Gallery*/
+
+#gallery div  {
+    float: left;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 10px;
+
+    -webkit-box-shadow: 1px 1px 5px #000000;
+    -moz-box-shadow: 1px 1px 5px #000000;
+    box-shadow: 1px 1px 5px #000000;
+
+
+}
+#gallery div:before{
+    content:attr(title);
+    display:none;
+
+}
+#gallery div:hover {
+    z-index:2;
+    position:relative;
+}
+#gallery div:hover::before{
+    background-image: url(../img/gray_sand.png);
+    color: #fff;
+    font-weight: bolder;
+    font-size: 0.9em;
+    width:180px;
+    display:block;
+
+    text-align: center;
+    border:2px solid #B5B5B5;
+
+    margin-top: 5px;
+    margin-left: 10px;
+
+    border-radius: 5px 5px 5px 5px;
+    -mox-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -border: 0px solid #000000;
+}
+#image1{background-image: url(../images/assign2.png);}
+#image2{background-image: url(../images/assign5.png);}
+#image3{background-image: url(../images/assign6b.png);}
+#image4{background-image: url(../images/assign7a.png);}
+#image5{background-image: url(../images/assign7b.png);}
+#image6{background-image: url(../images/assign8.png);}
+#image7{background-image: url(../images/assign9.png);}
